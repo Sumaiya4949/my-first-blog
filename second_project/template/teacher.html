@@ -1,0 +1,23 @@
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+  </tr>
+    {% for teachers in teacher_list %}
+    <tr>
+        <td>{{teachers.t_id}}</td>
+        <td>{{teachers.code}}</td>
+        <td>{{teachers.name}}</td>
+        <td>{{teachers.address}}</td>
+        <td>{{teachers.phone_no}}</td>
+    </tr>
+    {% endfor %}
+
+  <tr>
+    <td>{{teachers.code}}</td>
+    <td>{{teachers.name}}
+  </tr>
+</table>
+
+<h1>Name:{{teacher.name}}</h1>
+  <p>Code: {{teacher.code}}</p>
